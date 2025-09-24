@@ -6,7 +6,7 @@ import { IdeMessengerContext } from "../../../context/IdeMessenger";
 
 type SectionKey = Exclude<
   keyof ConfigYaml,
-  "name" | "version" | "schema" | "metadata" | "env" | "requestOptions"
+  "name" | "version" | "schema" | "metadata" | "env" | "requestOptions" | "tabAutocompleteOptions"
 >;
 
 interface EditBlockButtonProps<T extends SectionKey> {

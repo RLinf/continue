@@ -19,6 +19,11 @@ export function mergePackages(
       current.requestOptions,
       incoming.requestOptions,
     ),
+    // Merge tabAutocompleteOptions - incoming overrides current
+    tabAutocompleteOptions: {
+      ...(current as any).tabAutocompleteOptions,
+      ...(incoming as any).tabAutocompleteOptions,
+    },
   };
 }
 
@@ -40,6 +45,11 @@ export function mergeUnrolledAssistants(
       current.requestOptions,
       incoming.requestOptions,
     ),
+    // Merge tabAutocompleteOptions - incoming overrides current
+    tabAutocompleteOptions: {
+      ...(current as any).tabAutocompleteOptions,
+      ...(incoming as any).tabAutocompleteOptions,
+    },
   };
 }
 

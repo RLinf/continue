@@ -998,6 +998,10 @@ declare global {
     disableInFiles?: string[];
     useImports?: boolean;
     showWhateverWeHaveAtXMs?: number;
+    // send completion tracking data
+    enableCompletionTracking?: boolean;
+    completionTrackingUrl?: string;
+    completionTrackingHeaders?: { [key: string]: string };
   }
   
   interface StdioOptions {
